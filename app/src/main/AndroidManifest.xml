@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="c.aarsh121.alphabrowser">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:allowBackup="true"
+
+        android:enabled="true"
+        android:fullBackupContent="@xml/backup_descriptor"
+        android:icon="@drawable/uranus"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:usesCleartextTraffic="true">
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-5404724432369100~6269636285" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+
+        <activity
+            android:name="c.aarsh121.alphabrowser.Activity.HolderActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+
+        <service
+            android:name="c.aarsh121.alphabrowser.Service.HolderService"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name" />
+
+
+        <activity
+            android:name="c.aarsh121.alphabrowser.Activity.BrowserActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden">
+            <intent-filter android:icon="@mipmap/ic_launcher">
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.WEB_SEARCH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="sc_startPage" />
+                <action android:name="sc_bookmark" />
+                <action android:name="sc_history" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
+        </activity>
+
+
+        <activity
+            android:name="c.aarsh121.alphabrowser.Activity.Settings_Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/setting_label"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name="c.aarsh121.alphabrowser.Activity.Whitelist_AdBlock"
+            android:label="@string/setting_title_whitelist"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="c.aarsh121.alphabrowser.Activity.Whitelist_Javascript"
+            android:label="@string/setting_title_whitelistJS"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="c.aarsh121.alphabrowser.Activity.Whitelist_Cookie"
+            android:label="@string/setting_title_whitelistCookie"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="c.aarsh121.alphabrowser.Activity.Settings_ClearActivity"
+            android:label="@string/setting_title_clear_control"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="c.aarsh121.alphabrowser.Activity.Settings_StartActivity"
+            android:label="@string/setting_title_start_control"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="c.aarsh121.alphabrowser.Activity.Settings_DataActivity"
+            android:label="@string/setting_title_data"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="c.aarsh121.alphabrowser.Activity.Settings_UIActivity"
+            android:label="@string/setting_title_ui"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="c.aarsh121.alphabrowser.Activity.Settings_GestureActivity"
+            android:label="@string/setting_gestures"
+            android:theme="@style/AppTheme" />
+
+
+        <service
+            android:name="c.aarsh121.alphabrowser.Service.ClearService"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="c.aarsh121.alphabrowser.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".starteractivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".WelcomeActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+    </application>
+
+</manifest>

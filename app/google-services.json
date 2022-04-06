@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "172071818547",
+    "firebase_url": "https://alpha-browser-76950.firebaseio.com",
+    "project_id": "alpha-browser-76950",
+    "storage_bucket": "alpha-browser-76950.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:172071818547:android:f23e8dc5f4b1930ed85a46",
+        "android_client_info": {
+          "package_name": "c.aarsh121.alphabrowser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "172071818547-7afcams4qi1c5tr565uqlvrval0qf37a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "c.aarsh121.alphabrowser",
+            "certificate_hash": "f3744e1b008ae610d877b06151a7737c8f67f9f2"
+          }
+        },
+        {
+          "client_id": "172071818547-7jvkb67j7sm5vojjq6dp0nefdskoqddj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGvwySMhUvVLiZNb6r0JPfqLrAHruvSNU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "172071818547-7jvkb67j7sm5vojjq6dp0nefdskoqddj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

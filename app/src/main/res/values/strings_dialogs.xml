@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string name="changelog_title">A note for the User</string>
+    <string name="changelog_dialog">
+        Hello Explorer, thanks for installing Alpha Browser. Our team at FancyBeard welcomes you to an all new Experience of Browsing with Alpha Browser. With elegant and swift
+        browsing and fast speed with data saving features such as no- image mode, Adblock, separate customizable javascript option for every
+        Webpage, data savings for supportive websites and so on, we try to give you an experience of browsing that you can never forget.
+        With an all new concept of default homepage and browsing experience, it gives to user a new perspective for exploring internet. Hope you enjoy using it.
+        If you like Alpha Browser, please give it a 5 star rating and support it in play store. Any criticism, appreciation or advice would be extermly
+        helpful and our team will be thankful to the user
+        With Regards....,
+        Alpha Browser
+    </string>
+
+    <string name="overview_title">Overview</string>
+    <string name="overview_dialog">Here you can access all opened tabs and your data: saved sites on the startpage, bookmarks and history.
+        In the settings you can decide which content will be shown at start.</string>
+
+    <string name="startSite_title">Start site</string>
+    <string name="startSite_dialog">Long press any saved bookmark to set it as start site. This site will always load on start
+        or when you open a new tab. You can also set an blank start page via the bookmark menu.</string>
+
+    <string name="gestures_title">Gestures</string>
+    <string name="gestures_dialog">On the toolbar and the \"Navigation button\" you can use gestures:
+        \n \u25AA Swipe up/down     \u2192  scroll to top/bottom;
+        \n \u25AA Swipe left/right  \u2192  navigate back/forward;
+        \n \u25AA Tap               \u2192  open the menu;
+        \n \u25AA Long press        \u2192  open \"Fast toggle dialog\"
+        \n You can configure gestures in the settings.
+
+    </string>
+
+    <string name="fastToggle_title">Fast toggle</string>
+    <string name="fastToggle_dialog">If you long press the \"menu\" or the \"Navigation button\" the \"Fast toggle dialog\"
+        will open. Here you can change some important settings without leaving the current website. You can also add websites
+        to your whitelist for AdBlocker, JavaScript or Cookies..</string>
+
+    <string name="menu_title">Menu</string>
+    <string name="menu_dialog">Manage your tabs, share or save content, handle the current tab or use some features: just try it.
+        The menu can be dismissed, like all other notifications, by clicking back, clicking outside the menu or simply be
+        swiping the menu down.</string>
+
+    <string name="not_title">Notifications</string>
+    <string name="not_dialog">Notifications are displayed on the bottom of the screen. They can also be dismissed like the
+        menus.</string>
+
+    <string name="settings_dialog">There are even more options in the settings. Try it out!</string>
+
+
+    <string name="license_title">Alpha Browser-License and Terms of Service</string>
+    <string name="license_dialog">
+         1. Changes to These Terms
+Alpha Browser owns the right to subject changes to these terms and conditions from the date of it\'s effectiveness. Alpha Browser is a Software of "Fancy-Beard Armies". It is a free to use browser.
+
+2. Content
+ Alpha Browser is responsible for all the images, graphics and animations etc.. displayed in the app. However, it is not responsible for any visual content displayed by websites or the internet.
+
+3. Our Software and Services are ad- supported
+By using our software, you are agreeing to display ads in the browser. The content of the ads is not the responsibility of Alpha Browser.
+
+ 4. Third Party Websites
+The browser could contain ads and links to third party webpages/websites. However, it is only responsible to the links that are contained in the ads, and not in the links that are contained in the webpages while surfing the internet/websites through the app. These ads are the responsibility of the hosting websites/ or webpages and not thee browser.
+
+
+5. Your privacy is important to us
+Alpha Browser does not share any of the user's information to third party owners. It is also not responsible to the information filled by the user on the internet through the app(such as surveys, usernames, passwords etc..).
+
+ 6. Alpha Browser may modify these terms
+Alpha Browser owns the right to modify/ remove any of the terms and conditions that are found not liable or are the reason of conflict on any further date/occasion.
+
+7. General
+If any provision is held by the court of complete jurisdiction to be illegal, Alpha Browser may reach to the user through the e-mail address of the billing address provided by the user. It is a free browser and the permissions required by the browser are due to it's proper working(such as internet permission, external storage, etc..) and no misuse is done through these permissions. The user may rely on the terms of the application.
+
+ </string>
+
+    <string name="cont_dialog">
+        This is a single developer app, developed as a result of a lot of hardwork and sleepless nights. Any of the contributions
+    and donations will be highly regarded. However, various subjects are used including github to get the idea of the app, i.e. to shape the app into its present style.
+        Thank you!!!
+    </string>
+
+</resources>
