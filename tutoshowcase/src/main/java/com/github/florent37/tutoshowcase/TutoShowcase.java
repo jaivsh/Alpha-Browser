@@ -1,9 +1,4 @@
-/*
- *
- *  * Meetic
- *  * Copyright (c) 2016. All rights reserved.
- *
- */
+
 
 package com.github.florent37.tutoshowcase;
 
